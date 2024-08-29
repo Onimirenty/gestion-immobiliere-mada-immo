@@ -1,0 +1,52 @@
+voici la liste de mes pages :
+ - login 
+ - accueil
+ - chiffre d'affaire de mada immo
+ - details sur les habitation(bien)
+ - le gain d'argent des administreteur
+ - importation des donnees depuis des csv
+ - formulaire d'insertion de nouvelle location(inscription de client a une habitation(bien))    
+ - affichage de photos et description des habitation
+
+liste des controleurs :
+    - AdminStat_C : 
+        methode :
+            -gainAdmin
+            -chiffreAffaire
+    - DataImport_C :
+        methode :
+            -index(import_csv)
+            -importCSV(selection des csv,Import de donnees ,ajoute type bien ,bien et commission)
+            
+    - ExportPdf_C :
+        methode :
+            - index
+    - InformationLocation_C :
+        methode :
+            - index
+            - voirPhotos
+    -ListeLocation_C :
+        methode :
+             - index
+             - detailsLocation
+
+     -Location_C :
+        methode :
+            -create
+            -store_ajax
+            -success
+    - Login_C :
+        methode :
+            - index
+            - adminSignIn
+            - userSignIn
+            - Deconnexion
+
+
+
+
+- Dans le cadre de mon stage en informatique mon encadreur m'a demander d'utiliser un storage de navigateur (session,cookies,indexDb,cahe,local) 
+    donc je voudrais savoir quelle type de storage a part la session de CI 3 utiliser
+    dans quel contexte on les utilise
+    et dans quel contexte on doit les evites
+information: je developpe une applis web de gestion(location,et statistique) immobiliere mada immo
