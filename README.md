@@ -1,10 +1,10 @@
 # MaddaImmo
 
-Back-office de gestion locative immobilière développé avec **CodeIgniter 3** (PHP) et **PostgreSQL**.
+Back-office, front-office et base de donnée de gestion locative immobilière développé avec **CodeIgniter 3** (PHP) et **PostgreSQL**.
 
 L'application permet à un administrateur de gérer un portefeuille de biens immobiliers, leurs propriétaires et locataires, les contrats de location, ainsi que le suivi financier associé (chiffre d'affaires, gains).
 
-> ⚠️ Ce dépôt ne contient que le dossier `application/` de CodeIgniter 3. Le cœur du framework (`system/`) et le point d'entrée `index.php` ne sont pas inclus — voir la section [Installation](#installation).
+
 
 ## Sommaire
 
@@ -135,12 +135,4 @@ Le code fait référence aux tables, vues et fonctions PostgreSQL suivantes (sch
 
 > Ces noms sont extraits des requêtes présentes dans `application/models/`. Un script SQL de création n'étant pas fourni, il est recommandé de reconstituer le schéma à partir de ces éléments ou de le documenter séparément.
 
-## Points de vigilance avant mise en production
 
-- Le mot de passe de connexion à la base de données est actuellement en clair dans `application/config/database.php` — à externaliser (variables d'environnement, fichier non versionné, etc.).
-- `$config['csrf_protection']` est désactivée et `$config['encryption_key']` est vide dans `application/config/config.php` — à activer/renseigner avant toute mise en ligne.
-- Le profiler CodeIgniter (`$this->output->enable_profiler(TRUE)`) est actif sur plusieurs contrôleurs — à désactiver en environnement de production.
-
-## Licence
-
-Licence non définie pour le moment — à préciser selon vos besoins (MIT, propriétaire, académique, etc.).
