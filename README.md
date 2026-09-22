@@ -133,6 +133,5 @@ Le code fait référence aux tables, vues et fonctions PostgreSQL suivantes (sch
 - Vues : `v_liste_biens_proprietaires`, `v_liste_location_details`, `v_information_location`
 - Fonctions : `f_get_chiffre_affaire_total`, `f_get_gain_admin`
 
-> Ces noms sont extraits des requêtes présentes dans `application/models/`. Un script SQL de création n'étant pas fourni, il est recommandé de reconstituer le schéma à partir de ces éléments ou de le documenter séparément.
 
 
